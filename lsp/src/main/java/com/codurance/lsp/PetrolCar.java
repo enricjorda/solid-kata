@@ -1,6 +1,7 @@
 package com.codurance.lsp;
 
 public class PetrolCar extends Vehicle {
+
     private static final int FUEL_TANK_FULL = 100;
     private int fuelTankLevel = 0;
 
