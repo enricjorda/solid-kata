@@ -17,4 +17,9 @@ public class PetrolCar extends Vehicle implements PetrolVehicle, ElectricVehicle
     public int fuelTankLevel() {
         return fuelTankLevel;
     }
+
+    @Override
+    public void fill() {
+        fillUpWithFuel();
+    }
 }

@@ -19,4 +19,9 @@ public class ElectricCar extends Vehicle implements ElectricVehicle, PetrolVehic
     public int batteryLevel() {
         return batteryLevel;
     }
+
+    @Override
+    public void fill() {
+        chargeBattery();
+    }
 }

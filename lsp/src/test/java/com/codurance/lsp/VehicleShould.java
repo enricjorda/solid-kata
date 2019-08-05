@@ -37,6 +37,10 @@ public class VehicleShould {
         public void chargeBattery() {
 
         }
+
+        public void fill() {
+        }
+
     }
 
 }
