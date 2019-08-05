@@ -1,20 +1,16 @@
 package com.codurance.lsp;
 
-public class ElectricCar extends Vehicle  {
+public class ElectricCar extends Vehicle {
 
     private static final int BATTERY_FULL = 100;
     private int batteryLevel;
 
-    public void chargeBattery() {
+    @Override
+    public void fill() {
         batteryLevel = BATTERY_FULL;
     }
 
     public int batteryLevel() {
         return batteryLevel;
-    }
-
-    @Override
-    public void fill() {
-        chargeBattery();
     }
 }

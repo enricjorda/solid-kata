@@ -16,10 +16,8 @@ public class FillingStationShould {
 
         fillingStation.fill(car);
 
-        assertThat(car.fuelTankLevel())
-                .isEqualTo(FULL);
+        assertThat(car.fuelTankLevel()).isEqualTo(FULL);
     }
-
 
     @Test
     public void not_fail_refueling_an_electric_car() {
@@ -27,8 +25,7 @@ public class FillingStationShould {
 
         Throwable throwable = catchThrowable(() -> fillingStation.fill(car));
 
-        assertThat(throwable)
-                .isNull();
+        assertThat(throwable).isNull();
     }
 
 
@@ -38,8 +35,7 @@ public class FillingStationShould {
 
         fillingStation.fill(car);
 
-        assertThat(car.batteryLevel())
-                .isEqualTo(FULL);
+        assertThat(car.batteryLevel()).isEqualTo(FULL);
     }
 
 
@@ -49,7 +45,6 @@ public class FillingStationShould {
 
         Throwable throwable = catchThrowable(() -> fillingStation.fill(car));
 
-        assertThat(throwable)
-                .isNull();
+        assertThat(throwable).isNull();
     }
 }

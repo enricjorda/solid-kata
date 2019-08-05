@@ -11,9 +11,7 @@ public class VehicleShould {
 
         vehicle.startEngine();
 
-        assertThat(vehicle.engineIsStarted())
-                .isTrue();
-
+        assertThat(vehicle.engineIsStarted()).isTrue();
     }
 
     @Test
@@ -23,18 +21,11 @@ public class VehicleShould {
         vehicle.startEngine();
         vehicle.stopEngine();
 
-        assertThat(vehicle.engineIsStarted())
-                .isFalse();
+        assertThat(vehicle.engineIsStarted()).isFalse();
     }
-
 
     public class TestableVehicle extends Vehicle {
-
-
-
         public void fill() {
         }
-
     }
-
 }
