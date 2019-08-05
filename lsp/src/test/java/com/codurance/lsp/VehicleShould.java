@@ -30,13 +30,7 @@ public class VehicleShould {
 
     public class TestableVehicle extends Vehicle {
 
-        public void fillUpWithFuel() {
 
-        }
-
-        public void chargeBattery() {
-
-        }
 
         public void fill() {
         }
