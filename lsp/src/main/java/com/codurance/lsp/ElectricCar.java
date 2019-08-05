@@ -6,7 +6,9 @@ public class ElectricCar extends Vehicle implements ElectricVehicle, PetrolVehic
     private int batteryLevel;
 
     public void fillUpWithFuel() {
-        throw new UnsupportedOperationException("It's an electric car");
+
+        //throw new UnsupportedOperationException("It's an electric car");
+        return;
     }
 
     @Override
